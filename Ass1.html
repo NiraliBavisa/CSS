@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>User Details Form</title>
+    <style>
+    form#payment{background: #9cbc2c;
+        border-radius: 5px;
+        padding: 20px;
+        width: 400px;}
+        .x{color: #384313;
+	font-size: 16px;
+	font-weight: bold;
+	padding-bottom: 10px;
+	text-shadow: 0 1px 1px #c0d576;}
+        .y{color: #111111;
+            font-size: 13px;padding-bottom: 0;margin-bottom: 10px;}
+        .z{background: #b9cf6a;
+	background: rgba(255,255,255,.3);
+	border-color: #e3ebc3;
+	border-color: rgba(255,255,255,.6);
+	border: 2px solid;
+	border-radius: 5px;
+	line-height: 30px;
+	padding: 5px 10px;
+	margin-bottom: 2px;}
+    .submit{background: #384313;
+	border: none;
+	border-radius: 20px;
+	color: #ffffff;
+	display: block;
+	font: 18px Georgia, "Times New Roman", Times, serif;
+	letter-spacing: 1px;
+	margin: auto;
+	padding: 7px 25px;
+	text-shadow: 0 1px 1px #000000;
+	text-transform: uppercase;
+cursor: pointer;}
+    .a{float: left;
+        height: 20px;
+	width: 50px;
+    border: 1px solid black;
+border-radius: 20px;}
+    .b{line-height: 15px;
+	padding: 0 100px 0 20px;
+	width: auto;}
+    .c{float: left;
+        margin-right: 5px;}
+    </style>
+</head>
+<body style="background: #ffffff; color: #111111; padding: 20px;">
+    <form id="payment">
+        <div class="x">Step 1: Your Details</div>
+        <div class="y">Name<input class="z" type="text" placeholder="First and last name"></div>
+        <div class="y">Email<input class="z" type="email" placeholder="example@domain.com"></div>
+        <div class="y">Phone<input class="z" type="number" placeholder="Eg. +447500000000"></div>
+        <div class="x">Step 2: Delivery address</div>
+        <div class="y">Address<textarea class="z"></textarea></div>
+        <div class="y">Post Code<input class="z" type="number"></div>
+        <div class="y">Country<input class="z" type="text"></div>
+        <div class="x">Step 3: Card Details</div>
+    <div class="x">Card Type</div><input class="c" type="radio" name="Card"><div class="b"><img src="visa.jfif" class="a">VISA</div>
+        <input class="c" type="radio" name="Card"><div class="b"><img src="amex.png" class="a">AmEx</div>
+        <input class="c" type="radio" name="Card"><div class="b"><img src="Mastercard.png" class="a">Mastercard</div><br>
+        <div class="y">Card Number<input class="z" type="number"></div>
+        <div class="y">Security Code<input class="z" type="number"></div>
+        <div class="y">Name On Card<input class="z" type="text" placeholder="Exact name as on the card"></div>
+        <button class="submit" type="submit">Buy it!</button>
+    </form> 
+</body>
+</html>
